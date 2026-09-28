@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JPG Image Compressor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <h1>JPG Image Compressor</h1>
+    <p class="subtitle">Compress JPG/JPEG images directly in your browser.</p>
+
+    <label class="drop-zone" id="dropZone">
+      <input type="file" id="fileInput" accept="image/jpeg,image/jpg" multiple>
+      <div class="upload-icon">📁</div>
+      <strong>Click to select JPG images</strong>
+      <span>or drag & drop files here</span>
+    </label>
+
+    <div class="controls">
+      <label for="quality">Compression Quality: <b><span id="qualityValue">70</span>%</b></label>
+      <input type="range" id="quality" min="10" max="100" value="70">
+    </div>
+
+    <div id="results"></div>
+
+    <div class="actions">
+      <button id="compressBtn" disabled>Compress Images</button>
+      <button id="clearBtn" class="secondary">Clear</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+<footer>
+<h2 class="footernote">Ravi Makwana SP Office, Junagadh</h2>  
+</footer>
+</html>
